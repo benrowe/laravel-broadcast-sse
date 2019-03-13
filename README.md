@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-[!Server Sent Events][link-wikipedia] is a technology that allows servers to push
+[Server Sent Events][link-wikipedia] is a technology that allows servers to push
 events via a normal (but long lived) http request. 
 
 This package provides a broadcast connection adapter for SSE, plus the relevant 

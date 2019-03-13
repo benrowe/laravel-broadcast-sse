@@ -1,0 +1,55 @@
+{
+    "name": "benrowe/laravel-broadcast-sse",
+    "description": "SSE Broadcasat adapater for laravels event system + routing",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "sse",
+        "server-sent-events",
+        "broadcast",
+        "events",
+        "push"
+    ],
+    "homepage": "https://github.com/benrowe/laravel-broadcast-sse",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Rowe",
+            "email": "ben.rowe.83@gmail.com",
+            "homepage": "http://benrowe.info",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "squizlabs/php_codesniffer": "^3.4",
+        "phpmd/phpmd": "^2.6",
+        "laravel/framework": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Benrowe\\Laravel\\BroadcastSSE\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Benrowe\\Laravel\\BroadcastSSE\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
